@@ -53,6 +53,8 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+        sudo apt update
+        sudo apt install libfuse-dev
     - name: Clone source code
       working-directory: /workdir
       run: |
