@@ -4,6 +4,6 @@
 
 # update feed
 rm -rf feeds/packages/net/xray-core && svn co https://github.com/immortalwrt/packages/branches/openwrt-21.03/net/xray-core feeds/packages/net/xray-core
-rm -rf feeds/packages/lang/golang && svn co https://github.com/immortalwrt/packages/branches/openwrt-23.05/lang/golang feeds/packages/lang/golang
 rm -rf feeds/luci/applications/luci-app-openclash && svn co https://github.com/immortalwrt/luci/branches/openwrt-21.03/applications/luci-app-openclash feeds/luci/applications/luci-app-openclash
-
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
